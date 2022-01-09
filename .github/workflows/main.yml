@@ -14,11 +14,11 @@ on:
   workflow_dispatch:
 jobs:
   # Deployment Steps
-  deploy:
+  build:
     runs-on: ubuntu-20.04
     steps:
       - name: Deploying RustyMage to OVH Ubuntu 
-        uses: appleboy/ssh-action@master # An action made to control Linux servers. 
+        uses: actions/checkout@v2 
         with: # Set all of our secrets here for the action, these won't be show bc we use "Secrets"
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
