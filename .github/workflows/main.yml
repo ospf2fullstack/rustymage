@@ -15,7 +15,6 @@ jobs:
   # Deployment Steps
   build:
     runs-on: ubuntu-20.04
-    if: github.ref == 'refs/heads/master'
     steps:
       - name: Deploying RustyMage to OVH Ubuntu 
         uses: appleboy/ssh-action@master # An action made to control Linux servers. 
