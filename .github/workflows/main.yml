@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            rm -r /var/www/html/master/*
+            rm -r /var/www/html/master
             cd /var/www/html/ 
             git clone https://github.com/ospf2fullstack/rustymage master
   # cd - move to the correct directory
