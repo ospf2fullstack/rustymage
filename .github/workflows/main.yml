@@ -25,6 +25,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/html/RustyMageSplash 
-            git branch --set-upstream-to=ospf2fullstack/rustymage master
+            git clone https://github.com/ospf2fullstack/rustymage master
   # cd - move to the correct directory
   # git pull - pull any changes from git
