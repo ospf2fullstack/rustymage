@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Deploying RustyMage to OVH Ubuntu 
-        uses: actions/checkout@v2 
+        uses: appleboy/ssh-action@master # An action made to control Linux servers. 
         with: # Set all of our secrets here for the action, these won't be show bc we use "Secrets"
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
