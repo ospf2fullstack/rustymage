@@ -15,7 +15,6 @@ on:
 jobs:
   # Deployment Steps
   deploy:
-    runs-on: ubutnu-latest
     steps:
       - name: Deploying RustyMage to OVH Ubuntu 
         uses: appleboy/ssh-action@master # An action made to control Linux servers. 
