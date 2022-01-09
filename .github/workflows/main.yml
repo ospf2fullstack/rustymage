@@ -21,7 +21,7 @@ jobs:
         uses: appleboy/ssh-action@master # An action made to control Linux servers. 
         with: # Set all of our secrets here for the action, these won't be show bc we use "Secrets"
           host: ${{ secrets.HOST }}
-          username: ${{ secrests.USERNAME }}
+          username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
