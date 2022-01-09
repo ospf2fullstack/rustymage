@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /var/www/html/RustyMageSplash 
+            cd /var/www/html/ 
             git clone https://github.com/ospf2fullstack/rustymage master
   # cd - move to the correct directory
   # git pull - pull any changes from git
