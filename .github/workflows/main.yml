@@ -26,7 +26,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/html/RustyMageSplash 
-            git pull origin master --ff-only
+            git pull --rebase --ff-only
   # cd - move to the correct directory
   # git pull - pull any changes from git
 # Test 
